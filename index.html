@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket</title>
+    <style>
+      .field{
+          border: 2px solid black;
+          background-color: green;
+          height: 510px;
+      }
+      .bat{
+          transition: transform 0.1s ease-in;
+          /* border: 1px solid black; */
+      }
+      .ball{
+          height: 50px;
+          width: 50px;
+          position: relative;
+          left: 159px;
+          transition: transform 1s ease-out 0.2s;
+          /* border: 1px solid black; */
+
+
+      }
+      .field:hover .bat{
+          transform: rotate(-60deg);
+          transform-origin: top right;
+      }
+      .field:hover .ball{
+           transform: translate(450px, -380px);
+
+      }
+      @media screen and (max-width:576px) {
+
+          .field{
+          border: 2px solid black;
+          background-color: green;
+          width: 100%;
+          height: 510px;
+
+      }
+      @media screen and (min-width:576px) and (max-width:992px) {.field{
+          border: 2px solid black;
+          background-color: green;
+          height: 510px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header><h2>Cricket Play</h2></header>
+    <div class="field">
+      <img src="img/NicePng_cricket-bat-png_3847998.png" alt="" class="bat" />
+      <img class="ball" src="img/NicePng_cricket-ball-png_3840155.png" alt="" />
+    </div>
+  </body>
+</html>
